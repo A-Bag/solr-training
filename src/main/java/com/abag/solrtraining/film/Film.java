@@ -1,4 +1,4 @@
-package com.abag.solrtraining.film.model;
+package com.abag.solrtraining.film;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.solr.core.mapping.Indexed;
@@ -7,7 +7,7 @@ import org.springframework.data.solr.core.mapping.SolrDocument;
 import java.util.List;
 
 @SolrDocument(collection = "films")
-public class Film {
+class Film {
     @Id
     @Indexed(name = "id")
     private String id;
